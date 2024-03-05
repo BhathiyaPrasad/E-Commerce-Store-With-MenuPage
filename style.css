@@ -606,7 +606,7 @@
     left: 0;
     width: 100%;
     background-color: transparent;
-    padding-block: 40px;
+    padding-block: 0px;
     z-index: 4;
     border-block-end: 1px solid transparent;
     transition: var(--transition-1);
