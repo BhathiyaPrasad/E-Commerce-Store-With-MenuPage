@@ -529,7 +529,7 @@ body::-webkit-scrollbar-thumb:hover { background: hsl(0, 0%, 70%); }
 }
 
 .product-featured .showcase-title {
-  font-size: var(--fs-7);
+  font-size: 15px;
   color: var(--eerie-black);
   overflow: hidden;
   white-space: nowrap;
@@ -540,13 +540,13 @@ body::-webkit-scrollbar-thumb:hover { background: hsl(0, 0%, 70%); }
 
 .product-featured .showcase-desc {
   color: var(--sonic-silver);
-  font-size: var(--fs-7);
+  font-size: 12px;
   font-weight: var(--weight-300);
   margin-bottom: 10px;
 }
 
 .product-featured .price-box {
-  font-size: var(--fs-3);
+  font-size: 12px;
   display: flex;
   gap: 10px;
   margin-bottom: 10px;
@@ -586,7 +586,7 @@ body::-webkit-scrollbar-thumb:hover { background: hsl(0, 0%, 70%); }
   justify-content: space-between;
   align-items: center;
   color: var(--eerie-black);
-  font-size: var(--fs-9);
+  font-size: 12px;
   font-weight: var(--weight-400);
   text-transform: uppercase;
   margin-bottom: 10px;
@@ -612,7 +612,7 @@ body::-webkit-scrollbar-thumb:hover { background: hsl(0, 0%, 70%); }
 
 .product-featured .countdown-desc {
   color: var(--eerie-black);
-  font-size: var(--fs-9);
+  font-size: 12px;
   font-weight: var(--weight-600);
   text-transform: uppercase;
   margin-bottom: 10px;
@@ -632,14 +632,14 @@ body::-webkit-scrollbar-thumb:hover { background: hsl(0, 0%, 70%); }
 
 .product-featured .display-number {
   color: var(--eerie-black);
-  font-size: var(--fs-5);
+  font-size: 10px;
   font-weight: var(--weight-500);
   min-width: 40px;
 }
 
 .product-featured .display-text {
   color: var(--davys-gray);
-  font-size: var(--fs-11);
+  font-size: 10px;
 }
 
 
