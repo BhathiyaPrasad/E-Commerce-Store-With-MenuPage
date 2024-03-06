@@ -753,7 +753,7 @@ body::-webkit-scrollbar-thumb:hover { background: hsl(0, 0%, 70%); }
 
 .product-grid .showcase-category {
   color: var(--salmon-pink);
-  font-size: var(--fs-9);
+  font-size: 15px;
   font-weight: var(--weight-500);
   text-transform: uppercase;
   margin-bottom: 10px;
@@ -761,7 +761,7 @@ body::-webkit-scrollbar-thumb:hover { background: hsl(0, 0%, 70%); }
 
 .product-grid .showcase-title {
   color: var(--sonic-silver);
-  font-size: var(--fs-8);
+  font-size: 12px;
   font-weight: var(--weight-300);
   text-transform: capitalize;
   letter-spacing: 1px;
@@ -780,7 +780,7 @@ body::-webkit-scrollbar-thumb:hover { background: hsl(0, 0%, 70%); }
 .product-grid .price-box {
   display: flex;
   gap: 10px;
-  font-size: var(--fs-7);
+  font-size: 12px;
   color: var(--eerie-black);
   margin-bottom: 10px;
 }
@@ -822,7 +822,7 @@ body::-webkit-scrollbar-thumb:hover { background: hsl(0, 0%, 70%); }
 
 .testimonial-title {
   color: var(--onyx);
-  font-size: var(--fs-7);
+  font-size: 12px;
   margin-bottom: 15px;
 }
 
@@ -835,7 +835,7 @@ body::-webkit-scrollbar-thumb:hover { background: hsl(0, 0%, 70%); }
   max-width: 70%;
   margin: auto;
   color: var(--sonic-silver);
-  font-size: var(--fs-7);
+  font-size: 12px;
 }
 
 
@@ -944,7 +944,7 @@ body::-webkit-scrollbar-thumb:hover { background: hsl(0, 0%, 70%); }
 
 .service-title {
   color: var(--sonic-silver);
-  font-size: var(--fs-7);
+  font-size: 12px;
   font-weight: var(--weight-600);
   text-transform: capitalize;
   margin-bottom: 5px;
@@ -952,7 +952,7 @@ body::-webkit-scrollbar-thumb:hover { background: hsl(0, 0%, 70%); }
 
 .service-desc {
   color: var(--sonic-silver);
-  font-size: var(--fs-9);
+  font-size: 12px;
 }
 
 
@@ -988,12 +988,12 @@ body::-webkit-scrollbar-thumb:hover { background: hsl(0, 0%, 70%); }
 .blog-category {
   width: max-content;
   color: var(--salmon-pink);
-  font-size: var(--fs-8);
+  font-size: 15px;
 }
 
 .blog-title {
   color: var(--eerie-black);
-  font-size: var(--fs-5);
+  font-size: 15px;
   font-weight: var(--weight-600);
   line-height: 1.4;
   margin-bottom: 5px;
@@ -1004,7 +1004,7 @@ body::-webkit-scrollbar-thumb:hover { background: hsl(0, 0%, 70%); }
 
 .blog-meta {
   color: var(--sonic-silver);
-  font-size: var(--fs-7);
+  font-size: 12px;
 }
 
 .blog-meta cite {
@@ -1033,7 +1033,7 @@ footer {
 
 .footer-category-title {
   color: var(--salmon-pink);
-  font-size: var(--fs-6);
+  font-size: 15px;
   font-weight: var(--weight-600);
   text-transform: uppercase;
   margin-bottom: 15px;
@@ -1051,7 +1051,7 @@ footer {
 
 .category-box-title {
   color: var(--spanish-gray);
-  font-size: var(--fs-8);
+  font-size: 12px;
   font-weight: var(--weight-600);
   text-transform: uppercase;
 }
@@ -1059,7 +1059,7 @@ footer {
 .footer-category-link {
   position: relative;
   color: var(--sonic-silver);
-  font-size: var(--fs-7);
+  font-size: 12px;
   text-transform: capitalize;
   transition: var(--transition-timing);
 }
@@ -1092,7 +1092,7 @@ footer {
 .footer-nav .nav-title {
   position: relative;
   color: var(--white);
-  font-size: var(--fs-7);
+  font-size: 15px;
   text-transform: uppercase;
   margin-bottom: 15px;
   padding-bottom: 5px;
@@ -1114,7 +1114,7 @@ footer {
 .footer-nav-item .content {
   width: max-content;
   color: var(--sonic-silver);
-  font-size: var(--fs-7);
+  font-size: 12px;
   text-transform: capitalize;
   transition: var(--transition-timing);
 }
@@ -1134,7 +1134,7 @@ footer {
 
 .footer-nav-item .icon-box {
   color: var(--sonic-silver);
-  font-size: 25px;
+  font-size: 30px;
 }
 
 .footer-nav-item .icon-box ion-icon { --ionicon-stroke-width: 30px; }
@@ -1162,7 +1162,7 @@ footer {
 
 .copyright {
   color: var(--sonic-silver);
-  font-size: var(--fs-8);
+  font-size: 12px;
   font-weight: var(--weight-500);
   text-transform: capitalize;
   letter-spacing: 1.2px;

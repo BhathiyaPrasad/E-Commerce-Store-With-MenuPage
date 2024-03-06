@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<ul class="navbar-list">
+    <li class="navbar-item">
+        <a href="#home" class="navbar-link hover-underline">
+            <div class="separator"></div>
+            <span class="span">Home</span>
+        </a>
+    </li>
+    <li class="navbar-item dropdown">
+        <a href="#" class="navbar-link hover-underline">Shop</a>
+        <div class="dropdown-content">
+            <a href="#menu">Mens</a>
+            <a href="#about">Womens</a>
+            <a href="#footer">Accessories</a>
+            <a href="#footer">Unisex</a>
+            <a href="#footer">Footwear</a>
+            <a href="#footer">E - VOUCHER</a>
+            <a href="#footer">Sale</a>
+        </div>
+    </li>
+</ul>
+
+<style>
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+        z-index: 1;
+    }
+
+    .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+
+    .dropdown-content a:hover {
+        background-color: #ddd;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+</style>
+</body>
+</html>
