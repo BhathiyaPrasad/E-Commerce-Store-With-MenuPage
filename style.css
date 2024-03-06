@@ -1332,3 +1332,52 @@
       .menu-btn.open .bar:nth-child(3) {
         transform: translateY(-5px) rotate(-45deg);
       }
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+        z-index: 1;
+    }
+
+    .dropdown-content a {
+        color: black;
+        padding: 10px 14px;
+        text-decoration: none;
+        display: block;
+    }
+
+    .dropdown-content a:hover {
+        background-color: #ddd;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    .subcategory{
+      font-size: 15px;
+    }
+     /* Media query for mobile */
+    @media screen and (max-width: 768px) {
+        .navbar-list {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .navbar-item.dropdown {
+            position: static;
+        }
+
+        .dropdown-content {
+            position: static;
+            display: none;
+            background-color: transparent;
+            box-shadow: none;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: none;
+        }
+    }
