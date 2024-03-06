@@ -753,7 +753,7 @@ body::-webkit-scrollbar-thumb:hover { background: hsl(0, 0%, 70%); }
 
 .product-grid .showcase-category {
   color: var(--salmon-pink);
-  font-size: var(--fs-9);
+  font-size: 15px;
   font-weight: var(--weight-500);
   text-transform: uppercase;
   margin-bottom: 10px;
@@ -761,7 +761,7 @@ body::-webkit-scrollbar-thumb:hover { background: hsl(0, 0%, 70%); }
 
 .product-grid .showcase-title {
   color: var(--sonic-silver);
-  font-size: var(--fs-8);
+  font-size: 12px;
   font-weight: var(--weight-300);
   text-transform: capitalize;
   letter-spacing: 1px;
@@ -780,7 +780,7 @@ body::-webkit-scrollbar-thumb:hover { background: hsl(0, 0%, 70%); }
 .product-grid .price-box {
   display: flex;
   gap: 10px;
-  font-size: var(--fs-7);
+  font-size: 12px;
   color: var(--eerie-black);
   margin-bottom: 10px;
 }
