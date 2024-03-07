@@ -1776,4 +1776,11 @@ footer {
         .categories li.active {
           font-weight: bold;
         }
-  
+        .items {
+          list-style: none;
+          padding: 0;
+        }
+        .items li {
+          margin-bottom: 10px;
+          
+        }
