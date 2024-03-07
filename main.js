@@ -168,3 +168,58 @@ window.addEventListener("mousemove", function (event) {
   }
 
 });
+
+// Pagination Function
+
+function changePage(pageNumber) {
+  var pagination = document.getElementById('pagination');
+  var activePage = pagination.querySelector('.active');
+
+  var nextPage = parseInt(activePage.textContent) + pageNumber;
+  if (nextPage < 1 || nextPage > 5) { // Adjust this condition based on the number of pages
+      return; // Do nothing if trying to go beyond the available pages
+  }
+
+  activePage.classList.remove('active');
+  pagination.children[nextPage].classList.add('active');
+}
+
+
+
+// Functions for Filter the Products According to the Categories
+function filterItems(category) {
+  var items = document.querySelectorAll(".items li");
+  var categories = document
+    .getElementById("categories")
+    .getElementsByTagName("li");
+
+  // Loop through all items
+  for (var i = 0; i < items.length; i++) {
+    var item = items[i];
+
+    // If category is 'all', show all items
+    if (category === "all") {
+      item.style.display = "block";
+    } else {
+      // Hide items that don't match the selected category
+      if (item.classList.contains(category)) {
+        item.style.display = "block";
+      } else {
+        item.style.display = "none";
+      }
+    }
+  }
+
+  // Update active category indicator
+  for (var j = 0; j < categories.length; j++) {
+    var cat = categories[j];
+    if (
+      cat.textContent.toLowerCase() === category ||
+      (cat.textContent === "All" && category === "all")
+    ) {
+      cat.classList.add("active");
+    } else {
+      cat.classList.remove("active");
+    }
+  }
+}

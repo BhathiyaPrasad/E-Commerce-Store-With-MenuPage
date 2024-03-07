@@ -1,69 +1,482 @@
-<ul class="navbar-list">
-    <li class="navbar-item">
-        <a href="#home" class="navbar-link hover-underline">
-            <div class="separator"></div>
-            <span class="span">Home</span>
-        </a>
-    </li>
-    <li class="navbar-item dropdown">
-        <a href="#" class="navbar-link hover-underline">Shop</a>
-        <div class="dropdown-content">
-            <a href="#menu">Mens</a>
-            <a href="#about">Womens</a>
-            <a href="#footer">Accessories</a>
-            <a href="#footer">Unisex</a>
-            <a href="#footer">Footwear</a>
-            <a href="#footer">E - VOUCHER</a>
-            <a href="#footer">Sale</a>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Category Filter Example</title>
+    <link rel="stylesheet" href="styles.css">
+    
+    <style>
+      /* Styles for categories */
+      .categories {
+        list-style: none;
+        padding: 0;
+        text-align: center;
+      }
+      .categories li {
+        display: inline-block;
+        margin-right: 10px;
+        cursor: pointer;
+        text-align: center;
+        padding-top: 20px;
+        font-size: larger;
+      }
+      .categories li.active {
+        font-weight: bold;
+      }
+
+      /* Styles for items */
+      .items {
+        list-style: none;
+        padding: 0;
+      }
+      .items li {
+        margin-bottom: 10px;
+        display: inline-block;
+      }
+      
+    </style>
+  </head>
+  <body>
+   
+    <ul class="categories" id="categories">
+      <li class="active" onclick="filterItems('all')">All</li>
+      <li onclick="filterItems('category1')">Mens</li>
+      <li onclick="filterItems('category2')">Womens</li>
+      <li onclick="filterItems('category3')">Accessories</li>
+      <li onclick="filterItems('category4')">Footwear</li>
+    </ul>
+
+    <ul class="items" id="items">
+      <li class="category1">
+        <h1 class="add-cart-btn" style="text-align: center;">Mens</h1><br>
+        
+
+            <div class="showcase">
+
+              <div class="showcase-banner">
+
+                <img src="./assests/images/product01.jpg" alt="Mens Winter Leathers Jackets" width="300" class="product-img default">
+                <img src="./assests/images/product01.1.jpg" alt="Mens Winter Leathers Jackets" width="300" class="product-img hover">
+
+                <p class="showcase-badge">15%</p>
+
+                <div class="showcase-actions">
+
+                  <button class="btn-action">
+                    <ion-icon name="heart-outline"></ion-icon>
+                  </button>
+
+                  <button class="btn-action">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </button>
+
+                  <button class="btn-action">
+                    <ion-icon name="repeat-outline"></ion-icon>
+                  </button>
+
+                  <button class="btn-action">
+                    <ion-icon name="bag-add-outline"></ion-icon>
+                  </button>
+
+                </div>
+
+              </div>
+           
+            
+              <div class="showcase-content">
+                <br>
+                <a href="#" class="showcase-category">jacket</a>
+
+                <a href="#">
+                  <h3 class="showcase-title">Mens Winter Leathers Jackets</h3>
+                </a>
+
+                <div class="showcase-rating">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star-outline"></ion-icon>
+                  <ion-icon name="star-outline"></ion-icon>
+                </div>
+
+                <div class="price-box">
+                  <p class="price">$48.00</p>
+                  <del>$75.00</del>
+                </div>
+               </div>
+          </div>
+      </li>  
+      <li class="category2">
+        <h1 class="add-cart-btn" style="text-align: center;">Womens</h1><br>
+        
+
+         
+            
+        <div class="showcase">
+          <div class="showcase-banner">
+            <img
+              src="./assests/images/product08.jpg"
+              alt="Womens Party Wear Shoes"
+              class="product-img default"
+              width="300"
+            />
+            <img
+              src="./assests/images/product08.8.jpg"
+              alt="Womens Party Wear Shoes"
+              class="product-img hover"
+              width="300"
+            />
+
+            <p class="showcase-badge angle black">sale</p>
+
+            <div class="showcase-actions">
+              <button class="btn-action">
+                <ion-icon name="heart-outline"></ion-icon>
+              </button>
+
+              <button class="btn-action">
+                <ion-icon name="eye-outline"></ion-icon>
+              </button>
+
+              <button class="btn-action">
+                <ion-icon name="repeat-outline"></ion-icon>
+              </button>
+
+              <button class="btn-action">
+                <ion-icon name="bag-add-outline"></ion-icon>
+              </button>
+            </div>
+          </div>
+
+          <div class="showcase-content">
+            <br />
+            <a href="#" class="showcase-category">party wear</a>
+
+            <h3>
+              <a href="#" class="showcase-title">Womens Party Wear Shoes</a>
+            </h3>
+
+            <div class="showcase-rating">
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star-outline"></ion-icon>
+              <ion-icon name="star-outline"></ion-icon>
+            </div>
+
+            <div class="price-box">
+              <p class="price">$25.00</p>
+              <del>$30.00</del>
+            </div>
+          </div>
         </div>
-    </li>
-</ul>
+        
+      </li>
+  
+      <li class="category3">
+        <h1 class="add-cart-btn" style="text-align: center;">Accessories</h1><br>
+        
+        <div class="showcase">
+          <div class="showcase-banner">
+            <img
+              src="./assests/images/product10.jpg"
+              alt="Mens Winter Leathers Jackets"
+              class="product-img default"
+              width="300"
+            />
+            <img
+              src="./assests/images/product10.10.jpg"
+              alt="Mens Winter Leathers Jackets"
+              class="product-img hover"
+              width="300"
+            />
 
-<style>
-    .dropdown-content {
-        display: none;
-        position: absolute;
-        background-color: #f9f9f9;
-        min-width: 160px;
-        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-        z-index: 1;
-    }
+            <div class="showcase-actions">
+              <button class="btn-action">
+                <ion-icon name="heart-outline"></ion-icon>
+              </button>
 
-    .dropdown-content a {
-        color: black;
-        padding: 12px 16px;
-        text-decoration: none;
-        display: block;
-    }
+              <button class="btn-action">
+                <ion-icon name="eye-outline"></ion-icon>
+              </button>
 
-    .dropdown-content a:hover {
-        background-color: #ddd;
-    }
+              <button class="btn-action">
+                <ion-icon name="repeat-outline"></ion-icon>
+              </button>
 
-    .dropdown:hover .dropdown-content {
-        display: block;
-    }
+              <button class="btn-action">
+                <ion-icon name="bag-add-outline"></ion-icon>
+              </button>
+            </div>
+          </div>
 
-    /* Media query for mobile */
-    @media screen and (max-width: 768px) {
-        .navbar-list {
-            display: flex;
-            flex-direction: column;
+          <div class="showcase-content">
+            <br />
+            <a href="#" class="showcase-category">jacket</a>
+
+            <h3>
+              <a href="#" class="showcase-title"
+                >Mens Winter Leathers Jackets</a
+              >
+            </h3>
+
+            <div class="showcase-rating">
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star-outline"></ion-icon>
+            </div>
+
+            <div class="price-box">
+              <p class="price">$32.00</p>
+              <del>$45.00</del>
+            </div>
+          </div>
+        </div>
+        
+      </li>
+ 
+      <li class="category1">
+      
+        <div class="showcase">
+          <div class="showcase-banner">
+            <img
+              src="./assests/images/product11.jpg"
+              alt="Trekking & Running Shoes - black"
+              class="product-img default"
+              width="300"
+            />
+            <img
+              src="./assests/images/product11.11.jpg"
+              alt="Trekking & Running Shoes - black"
+              class="product-img hover"
+              width="300"
+            />
+
+            <p class="showcase-badge angle black">sale</p>
+
+            <div class="showcase-actions">
+              <button class="btn-action">
+                <ion-icon name="heart-outline"></ion-icon>
+              </button>
+
+              <button class="btn-action">
+                <ion-icon name="eye-outline"></ion-icon>
+              </button>
+
+              <button class="btn-action">
+                <ion-icon name="repeat-outline"></ion-icon>
+              </button>
+
+              <button class="btn-action">
+                <ion-icon name="bag-add-outline"></ion-icon>
+              </button>
+            </div>
+          </div>
+
+          <div class="showcase-content">
+            <br />
+            <a href="#" class="showcase-category">sports</a>
+
+            <h3>
+              <a href="#" class="showcase-title"
+                >Trekking & Running Shoes - black</a
+              >
+            </h3>
+
+            <div class="showcase-rating">
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star-outline"></ion-icon>
+              <ion-icon name="star-outline"></ion-icon>
+            </div>
+
+            <div class="price-box">
+              <p class="price">$58.00</p>
+              <del>$64.00</del>
+            </div>
+          </div>
+        </div>
+       
+      </li>
+      <li class="category2">
+        
+       
+        <div class="showcase">
+          <div class="showcase-banner">
+            <img
+              src="./assests/images/prodcut12.jpg"
+              alt="Men's Leather Formal Wear shoes"
+              class="product-img default"
+              width="300"
+            />
+            <img
+              src="./assests/images/product12.12.jpg"
+              alt="Men's Leather Formal Wear shoes"
+              class="product-img hover"
+              width="300"
+            />
+
+            <div class="showcase-actions">
+              <button class="btn-action">
+                <ion-icon name="heart-outline"></ion-icon>
+              </button>
+
+              <button class="btn-action">
+                <ion-icon name="eye-outline"></ion-icon>
+              </button>
+
+              <button class="btn-action">
+                <ion-icon name="repeat-outline"></ion-icon>
+              </button>
+
+              <button class="btn-action">
+                <ion-icon name="bag-add-outline"></ion-icon>
+              </button>
+            </div>
+          </div>
+
+          <div class="showcase-content">
+            <br />
+            <a href="#" class="showcase-category">formal</a>
+
+            <h3>
+              <a href="#" class="showcase-title"
+                >Men's Leather Formal Wear shoes</a
+              >
+            </h3>
+
+            <div class="showcase-rating">
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star-outline"></ion-icon>
+            </div>
+
+            <div class="price-box">
+              <p class="price">$50.00</p>
+              <del>$65.00</del>
+            </div>
+          </div>
+        </div>
+      
+        
+        
+      </li>
+      <li class="category3">
+       
+        <div class="showcase">
+          <div class="showcase-banner">
+            <img
+              src="./assests/images/product13.jpg"
+              alt="Better Basics French Terry Sweatshorts"
+              class="product-img default"
+              width="300"
+            />
+            <img
+              src="./assests/images/product13.13.jpg"
+              alt="Better Basics French Terry Sweatshorts"
+              class="product-img hover"
+              width="300"
+            />
+
+            <p class="showcase-badge angle black">sale</p>
+
+            <div class="showcase-actions">
+              <button class="btn-action">
+                <ion-icon name="heart-outline"></ion-icon>
+              </button>
+
+              <button class="btn-action">
+                <ion-icon name="eye-outline"></ion-icon>
+              </button>
+
+              <button class="btn-action">
+                <ion-icon name="repeat-outline"></ion-icon>
+              </button>
+
+              <button class="btn-action">
+                <ion-icon name="bag-add-outline"></ion-icon>
+              </button>
+            </div>
+          </div>
+
+          <div class="showcase-content">
+            <br />
+            <a href="#" class="showcase-category">shorts</a>
+
+            <h3>
+              <a href="#" class="showcase-title"
+                >Better Basics French Terry Sweatshorts</a
+              >
+            </h3>
+
+            <div class="showcase-rating">
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star"></ion-icon>
+              <ion-icon name="star-outline"></ion-icon>
+              <ion-icon name="star-outline"></ion-icon>
+            </div>
+
+            <div class="price-box">
+              <p class="price">$78.00</p>
+              <del>$85.00</del>
+            </div>
+          
+      </li>
+    </ul>
+</div>
+</div>
+<p>
+<li class="category4">
+    This is Testing
+</li>
+</p> 
+<pc class="category4">Fuck</p>
+
+    <script>
+      function filterItems(category) {
+        var items = document.querySelectorAll(".items li");
+        var categories = document
+          .getElementById("categories")
+          .getElementsByTagName("li");
+
+        // Loop through all items
+        for (var i = 0; i < items.length; i++) {
+          var item = items[i];
+
+          // If category is 'all', show all items
+          if (category === "all") {
+            item.style.display = "block";
+          } else {
+            // Hide items that don't match the selected category
+            if (item.classList.contains(category)) {
+              item.style.display = "block";
+            } else {
+              item.style.display = "none";
+            }
+          }
         }
 
-        .navbar-item.dropdown {
-            position: static;
+        // Update active category indicator
+        for (var j = 0; j < categories.length; j++) {
+          var cat = categories[j];
+          if (
+            cat.textContent.toLowerCase() === category ||
+            (cat.textContent === "All" && category === "all")
+          ) {
+            cat.classList.add("active");
+          } else {
+            cat.classList.remove("active");
+          }
         }
-
-        .dropdown-content {
-            position: static;
-            display: none;
-            background-color: transparent;
-            box-shadow: none;
-        }
-
-        .dropdown:hover .dropdown-content {
-            display: none;
-        }
-    }
-</style>
+      }
+      
+    </script>
+  </body>
+</html>
