@@ -31,7 +31,7 @@
   <!-- 
     - custom css link
   -->
-
+<link rel="stylesheet" href="style.csss">
 <link rel="stylesheet" href="styles.css">
 <link re
 href="https://unpkg.com/boxicons@2.0.8/css/boxicons.min.css"
@@ -74,8 +74,46 @@ rel="stylesheet"/>
 
 </head>
 
-<body id="top">
+<header class="header" data-header>
+  <div class="container">
 
+    <a href="#" class="logo">
+      <img src="./assests/images/saluni non background.png" width="160" height="50" alt="Sweet Beans - Home">
+    </a>
+
+    <nav class="navbar" data-navbar>
+
+      <button class="close-btn" aria-label="close menu" data-nav-toggler>
+        <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+      </button>
+
+      <a href="#" class="logo">
+        <img src="./assests/images/LOGOSALNIFINAL22.png" width="100" height="40" alt="Saluni Fashion - Home">
+      </a>
+
+      <ul class="navbar-list">
+         
+        <li class="navbar-item"  onclick="filterItems('category2')">
+          <a href="#home" class="navbar-link hover-underline" style="font-size: large; color: black;">
+            <div class="separator"></div>
+
+            <span class="span">Home</span>
+          </a>
+        </li>
+
+
+        <li class="navbar-item dropdown" onclick="filterItems('category1')">
+          <a href="#Men" class="navbar-link hover-underline" style="font-size: large;color: black;"> <div class="separator"></div><span class="span">Mens</span></a>
+            <div class="dropdown-content">
+            <a href="#Trousers" class="subcategory">Trousers</a>
+            <a href="#about" class="subcategory">T Shirts</a>
+            <a href="#footer" class="subcategory">Shirts</a>
+            <a href="#footer" class="subcategory">Shorts</a>
+            <a href="#footer" class="subcategory">Footwear</a>
+          </div>
+        
+        </li>
+     
 
 
     <ul class="categories" id="categories">
@@ -85,6 +123,26 @@ rel="stylesheet"/>
         <li onclick="filterItems('category3')">Accessories</li>
         <li onclick="filterItems('category4')">Footwear</li>
       </ul>
+
+<!-- testing area -->
+ 
+         
+
+</ul>
+</nav>
+</div>
+</header>
+
+
+
+
+
+
+
+
+
+
+
 
   <!-- 
     - #TOP BAR
