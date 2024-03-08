@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+    /* Styles for categories */
+    .categories {
+        list-style: none;
+        padding: 0;
+    }
+    .categories li {
+        display: inline-block;
+        margin-right: 10px;
+        cursor: pointer;
+    }
+    .categories li.active {
+        font-weight: bold;
+    }
+
+    /* Styles for items */
+    .items {
+        list-style: none;
+        padding: 0;
+    }
+    .items li {
+        margin-bottom: 10px;
+    }
+</style>
+</head>
+<body id="top">
+    <div class="sectionone">
+
+    
+
+
+
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <a href="#" class="logo">
+        <img src="./assests/images/saluni non background.png" width="160" height="50" alt="Sweet Beans - Home">
+      </a>
+
+      <nav class="navbar" data-navbar>
+
+        <button class="close-btn" aria-label="close menu" data-nav-toggler>
+          <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+        </button>
+
+        <a href="#" class="logo">
+          <img src="./assests/images/LOGOSALNIFINAL22.png" width="100" height="40" alt="Saluni Fashion - Home">
+        </a>
+
+        <ul class="navbar-list">
+           
+          <li class="navbar-item"  onclick="filterItems('category2')">
+            <a href="#home" class="navbar-link hover-underline" style="font-size: large; color: black;">
+              <div class="separator"></div>
+
+              <span class="span">Home</span>
+            </a>
+          </li>
+
+
+          <li class="navbar-item dropdown" onclick="filterItems('category1')">
+            <a href="#Men" class="navbar-link hover-underline" style="font-size: large;color: black;"> <div class="separator"></div><span class="span">Mens</span></a>
+              <div class="dropdown-content">
+              <a href="#Trousers" class="subcategory">Trousers</a>
+              <a href="#about" class="subcategory">T Shirts</a>
+              <a href="#footer" class="subcategory">Shirts</a>
+              <a href="#footer" class="subcategory">Shorts</a>
+              <a href="#footer" class="subcategory">Footwear</a>
+            </div>
+          
+          </li>
+    
+          <li class="navbar-item dropdown">
+            <a href="Menu.html#women" class="navbar-link hover-underline" style="font-size: large; color: black;"> <div class="separator"></div><span class="span">Womens</span></a>
+              <div class="dropdown-content">
+              <a href="#menu" class="subcategory">Skirts</a>
+              <a href="#about" class="subcategory">T Shirts</a>
+              <a href="#footer" class="subcategory">Tops</a>
+              <a href="#footer" class="subcategory">Shorts</a>
+              <a href="#footer" class="subcategory">Frocks</a>
+            </div>
+          
+          </li>
+
+          <li class="navbar-item dropdown">
+            <a href="#menu" class="navbar-link hover-underline" style="font-size: large; color: black;"> <div class="separator"></div><span class="span">Accessories</span></a>
+              <div class="dropdown-content">
+              <a href="#menu" class="subcategory">Bags</a>
+              <a href="#about" class="subcategory">Belts</a>
+              <a href="#footer" class="subcategory">Necklace</a>
+              <a href="#footer" class="subcategory">HeadBands</a>
+              <a href="#footer" class="subcategory">Bracelets</a>
+            </div>
+          
+          </li>
+          <li class="navbar-item dropdown">
+            <a href="#menu" class="navbar-link hover-underline" style="font-size: large;color: black;"> <div class="separator"></div><span class="span">Footwear</span></a>
+              <div class="dropdown-content">
+              <a href="#menu" class="subcategory">Slippers</a>
+              <a href="#about" class="subcategory">Heels</a>
+              <a href="#footer" class="subcategory">Dek Shoes</a>
+              <a href="#footer" class="subcategory">Formal Shoes</a>
+              <a href="#footer" class="subcategory">Flat Slippers</a>
+            </div>
+          
+          </li>
+          
+          <li class="navbar-item dropdown">
+            <a href="#menu" class="navbar-link hover-underline" style="font-size: large;color: black;"> <div class="separator"></div><span class="span">E - VOUCHER</span></a>
+              <div class="dropdown-content">
+              <a href="#menu" class="subcategory">Rs 2000.00</a>
+              <a href="#about" class="subcategory">Rs 5000.00</a>
+              <a href="#footer" class="subcategory">Rs 3000.00</a>
+              <a href="#footer" class="subcategory">Rs 10000.00</a>
+             
+            </div>
+          
+          </li>
+          <li class="navbar-item dropdown">
+            <a href="#menu" class="navbar-link hover-underline" style="font-size: large;color: black;"> <div class="separator"></div><span class="span">Sale</span></span></a>
+              <div class="dropdown-content">
+              <a href="#menu" class="subcategory">Daily Deals</a>
+              <a href="#about" class="subcategory">Top Sales</a>
+              
+            </div>
+          
+          </li>
+        
+
+        </ul>
+
+        <div class="text-center">
+          <p class="headline-1 navbar-title">Visit Us</p>
+
+          <address class="body-4"><a href="https://www.google.com/maps/dir//7.291585,80.64289/@7.2917574,80.5607619,12z?entry=ttu">
+            No: 1132,2A, Pannipitiya Rd, Thalawathugoda , Colombo, Sri Lanka <br>
+          </a>
+          </address>
+
+          <p class="body-4 navbar-text">Open: Daily: 6.30 am to 6.00 pm </p>
+
+          <a href="mailto:sweatbeans@gmail.com" class="body-4 sidebar-link">salunifashion@gmail.com</a>
+
+          <div class="separator"></div>
+
+          <p class="contact-label">Order via  Call</p>
+
+          <a href="tel:+94774095909" class="body-1 contact-number hover-underline">
+            +94 77 409 5909
+          </a>
+        </div>
+
+      </nav>
+
+     
+<button class="menu-btn" aria-label="Open Menu" data-nav-toggler>
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+      
+
+      <div class="overlay" data-nav-toggler data-overlay></div>
+
+    </div>
+    
+    <div>
+      <P id="Trousers" style="color: black;">Hello This Is Trousers</P>
+      </div>
+  </header>
+
+
+<script src="main.js"></script>
+  </body>
+</html>

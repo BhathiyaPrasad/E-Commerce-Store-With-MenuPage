@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagination Example</title>
+    <style>
+        .pagination {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            padding: 0;
+            margin-top: 20px; /* Add some space between content and pagination */
+        }
+        .pagination li {
+            margin: 0 5px;
+        }
+        .pagination li a {
+            text-decoration: none;
+            padding: 5px 10px;
+            border: 1px solid #ccc;
+            color: #333;
+            display: inline-block; /* Ensure each pagination link is displayed in a block */
+        }
+        .pagination li a:hover {
+            background-color: #f0f0f0;
+        }
+        .pagination .active a {
+            background-color: #007bff;
+            color: #fff;
+        }
+
+        /* Make pagination responsive */
+        @media only screen and (max-width: 600px) {
+            .pagination {
+                flex-wrap: wrap; /* Allow pagination items to wrap on smaller screens */
+            }
+            .pagination li {
+                margin: 5px; /* Add some spacing between pagination items */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <!-- Your content here -->
+    </div>
+
+    <ul class="pagination">
+        <li><a href="#">&laquo; Prev</a></li>
+        <li class="active"><a href="#">1</a></li>
+        <li><a href="#">2</a></li>
+        <li><a href="#">3</a></li>
+        <li><a href="#">4</a></li>
+        <li><a href="#">5</a></li>
+        <li><a href="#">Next &raquo;</a></li>
+    </ul>
+</body>
+</html>
