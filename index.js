@@ -223,3 +223,9 @@ function filterItems(category) {
     }
   }
 }
+
+
+function filtersubcategories(subcategory){
+  var subitems = document.querySelectorAll(".subitems li");
+  var subcategories = document.getElementById("subcategories").getElementsByTagName("li")
+}

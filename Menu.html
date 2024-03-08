@@ -31,7 +31,7 @@
   <!-- 
     - custom css link
   -->
-
+<link rel="stylesheet" href="menunavbar.css">
 <link rel="stylesheet" href="styles.css">
 <link re
 href="https://unpkg.com/boxicons@2.0.8/css/boxicons.min.css"
@@ -74,17 +74,126 @@ rel="stylesheet"/>
 
 </head>
 
-<body id="top">
+<nav class="nav">
+  <div class="wrapper container">
+
+<a href="test.html" class="logo">
+
+<img src="./assests/images/LOGOSALNIFINAL.png" width="160" height="50" >
+</a>
+
+
+<ul class="nav-list">
+<div class="top">
+<label for="" class="btn close-btn"
+  ><i class='bx bx-x' ></i></label>
+</div>
+
+<li><a href="index.html">Home</a></li>
+<li><a href="products.html">Products</a></li>
+<li>
+<a href="" class="desktop-item"
+  >Shop <span><i class='bx bx-chevron-down'></i></span
+></a>
+<input type="checkbox" id="showMega" />
+<label for="showMega" class="mobile-item">Shop <span><i class='bx bx-chevron-down'></i></label>
+<div class="mega-box">
+  <div class="content">
+    <div class="row">
+      <img src="./images/pic.jpg" alt="">
+    </div>
+    <div class="row">
+      <header>Shop Layout</header>
+      <ul class="mega-links">
+        <li><a href="">Shop with Background</a></li>
+        <li><a href="">Shop with Background</a></li>
+        <li><a href="">Shop with Background</a></li>
+        <li><a href="">Shop with Background</a></li>
+      </ul>
+    </div>
+    <div class="row">
+      <header>Product Layout</header>
+      <ul class="mega-links">
+        <li><a href="">Shop with Background</a></li>
+        <li><a href="">Shop with Background</a></li>
+        <li><a href="">Shop with Background</a></li>
+        <li><a href="">Shop with Background</a></li>
+      </ul>
+    </div>
+    <div class="row">
+      <header>Filter Layout</header>
+      <ul class="mega-links">
+        <li><a href="">Shop with Background</a></li>
+        <li><a href="">Shop with Background</a></li>
+        <li><a href="">Shop with Background</a></li>
+        <li><a href="">Shop with Background</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+</li>
+<li><a href="">Blog</a></li>
+<li>
+<a href="" class="desktop-item">Vendors <span><i class='bx bx-chevron-down'></i> </a>
+  <input type="checkbox"  id="showdrop1">
+  <label for="showdrop1" class="mobile-item">Vendors <span><i class='bx bx-chevron-down'></i></label>
+    <ul class="drop-menu1">
+      <li><a href="">Vendor store listings</a></li>
+      <li><a href="">store details</a></li>
+    </ul>
+</li>
+<li>
+<a href="" class="desktop-item">Page <span><i class='bx bx-chevron-down'></i> </a>
+  <input type="checkbox"  id="showdrop2">
+  <label for="showdrop2" class="mobile-item">Page <span><i class='bx bx-chevron-down'></i></label>
+    <ul class="drop-menu2">
+      <li><a href="">About</a></li>
+      <li><a href="">Contact</a></li>
+      <li><a href="">Faq</a></li>
+      <li><a href="">Page 404</a></li>
+    </ul>
+</li>
+<li class="icons">
+<a href="cart.html">
+<span>
+  <i class='bx bx-cart'></i>
+  <small class="count d-flex">0</small>
+</span>
+</a>
+<span>
+
+</span>
+</li>
+</ul>
+<label for="" class="btn open-btn"><i class='bx bx-menu' ></i></label>
+</div>
+</nav>
 
 
 
-    <ul class="categories" id="categories">
+    <!-- <ul class="categories" id="categories">
         <li class="active" onclick="filterItems('all')">All</li>
         <li onclick="filterItems('category1')">Mens</li>
         <li onclick="filterItems('category2')">Womens</li>
         <li onclick="filterItems('category3')">Accessories</li>
         <li onclick="filterItems('category4')">Footwear</li>
-      </ul>
+      </ul> -->
+
+<!-- testing area -->
+ 
+         
+
+
+
+
+
+
+
+
+
+
+
+
 
   <!-- 
     - #TOP BAR
@@ -2174,8 +2283,8 @@ rel="stylesheet"/>
          
            </footer>
          </div>
-
-<script src="main.js"></script>
+<script src="menu.js"></script>
+<script src="index.js"></script>
   <!-- 
     - ionicon link
   -->
